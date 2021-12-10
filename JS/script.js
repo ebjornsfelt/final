@@ -1,24 +1,32 @@
-// let darkmode = document.querySelector(".toggle");
-// darkmode.addEventListener("change", function (event) {
-//     event.preventDefault();
-//     darkmodeupdate();
+
+
+// const toggle = document.getElementById("toggle");
+// const  body = document.body;
+
+
+// toggle.addEventListener("input", a => {
+//     const checkchecked = a.target.checked;
+
+
+//     if (checkchecked) {
+//         document.body.style = ".toggle";
+//     } else {
+//         document.body.style = ".light-theme";
+//     }
+
+
+
+
 // })
 
-const toggle = document.getElementById("toggle");
-const  body = document.body;
+let submitbutton = document.querySelector("submit");
 
+submitbutton.addEventListener("click", function (event) {
+    event.preventDefault();
 
-toggle.addEventListener("input", a => {
-    const checkchecked = a.target.checked;
+    let message = document.getElementById('msg')
+    let name = document.getElementById('name') 
+    let submit = document.getElementById('frm-btn')
 
-
-    if (checkchecked) {
-        document.body.style = ".toggle";
-    } else {
-        document.body.style = ".light-theme";
-    }
-
-
-
-
+    console.log(message, name, submit)
 })
